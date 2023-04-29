@@ -1,0 +1,1 @@
+#Crea un programa que pida al usuario dos números enteros y muestre en pantalla su cociente y su resto.
