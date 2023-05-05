@@ -57,7 +57,7 @@ print(f"La primera letra del texto es {primera_letra} y la última letra es {ult
 print()
 
 # 4- Texto en orden inverso
-texto_inverso = texto[::-1]
+texto_inverso = " ".join(texto.split()[::-1])
 print(f"El texto en orden inverso es: {texto_inverso}")
 
 print()
