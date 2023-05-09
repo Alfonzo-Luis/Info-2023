@@ -41,6 +41,8 @@ intentos_restantes = 8
 
 print(f"{nombre}, estoy pensando en un número entre 1 y 100. Tienes 8 intentos para adivinarlo.")
 
+print("-~-" * 30)
+
 # Mientras queden intentos, seguimos jugando
 
 while intentos_restantes > 0:
@@ -66,19 +68,24 @@ while intentos_restantes > 0:
     # Verificamos si el usuario adivinó el número
 
     if numero_usuario == numero_a_adivinar:
+        print("~" * 90)
         print(f"¡Felicidades, {nombre}! Adivinaste el número en el intento {9 - intentos_restantes}.")
+        print("~" * 90)
         break
     elif numero_usuario < numero_a_adivinar:
         print("El número a adivinar es mayor.")
+        print("+" * 90)
     else:
         print("El número a adivinar es menor.")
+        print("-" * 90)
 
     intentos_restantes -= 1
     
     # Informamos al usuario cuántos intentos le quedan
-
+    
     print(f"Te quedan {intentos_restantes} intentos.")
     
+    print("*" * 90)
 # Si se acabaron los intentos y el usuario no adivinó el número, se lo informamos
 
 if intentos_restantes == 0:
