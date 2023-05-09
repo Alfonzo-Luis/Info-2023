@@ -61,10 +61,6 @@ while intentos_restantes > 0:
 
     numero_usuario = int(numero_str)
     
-    # Descontamos un intento al usuario
-
-   
-    
     # Verificamos si el usuario adivinó el número
 
     if numero_usuario == numero_a_adivinar:
@@ -79,6 +75,8 @@ while intentos_restantes > 0:
         print("El número a adivinar es menor.")
         print("-" * 90)
 
+    # Descontamos un intento al usuario
+
     intentos_restantes -= 1
     
     # Informamos al usuario cuántos intentos le quedan
@@ -90,3 +88,5 @@ while intentos_restantes > 0:
 
 if intentos_restantes == 0:
     print(f"Lo siento, {nombre}, se te acabaron los intentos. El número que debías adivinar era {numero_a_adivinar}.")
+
+#Integrantes G6: Lucas Matias Almiron, Mauricio Acevedo, Gustavo Medina, Alfonzo Luis Andres, Omar Alejandro Maciel, Alejandor Gutierrez, Federico Peralta, Matias Martin Satina, Rodolfo Sanchez, Luis Marcos Antonio Leiva
