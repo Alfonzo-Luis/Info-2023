@@ -61,7 +61,7 @@ while intentos_restantes > 0:
     
     # Descontamos un intento al usuario
 
-    intentos_restantes -= 1
+   
     
     # Verificamos si el usuario adivinó el número
 
@@ -72,6 +72,8 @@ while intentos_restantes > 0:
         print("El número a adivinar es mayor.")
     else:
         print("El número a adivinar es menor.")
+
+    intentos_restantes -= 1
     
     # Informamos al usuario cuántos intentos le quedan
 
